@@ -10,7 +10,7 @@ url="https://git.famillegratton.net:3000/devops/prometheusFileSD"
 arch=x86_64
 license=GPL2
 #depends="gcompat"
-install="$pkgname.pre-install $pkgname.post-install $pkgname.pre-upgrade $pkgname.post-upgrade $pkgname.pre-deinstall $pkgname.post-deinstall"
+install="$pkgname.pre-install $pkgname.post-install $pkgname.pre-deinstall $pkgname.post-deinstall"
 #source="$pkgname-$pkgver-$pkgrel.tar.bz2::http://localhost/$pkgname-$pkgver-$pkgrel.tar.bz2"
 binaryname=prometheusSDsendHost
 
