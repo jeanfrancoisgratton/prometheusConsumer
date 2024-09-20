@@ -64,3 +64,6 @@ install -Dpm 0755 %{_sourcedir}/%{_binaryname} %{buildroot}%{_bindir}/%{_binaryn
 
 
 %changelog
+* Fri Sep 20 2024 RPM Builder <builder@famillegratton.net> 1.00.00-0
+- new package built with tito
+
