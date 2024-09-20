@@ -47,7 +47,7 @@ func main() {
 	// Get the client hostname
 	hostname, err := os.Hostname()
 	// On MacOS, hostnames are suffixed with ".local". We need to trim that
-	hostname = strings.Trim(hostname, ".local")
+	hostname = strings.TrimSuffix(hostname, ".local")
 	if err != nil {
 		log.Fatalf("Unable to get hostname: %v\n", err)
 	}
