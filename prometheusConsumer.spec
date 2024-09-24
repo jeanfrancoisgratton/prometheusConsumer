@@ -64,6 +64,10 @@ install -Dpm 0755 %{_sourcedir}/%{_binaryname} %{buildroot}%{_bindir}/%{_binaryn
 
 
 %changelog
+* Tue Sep 24 2024 RPM Builder <builder@famillegratton.net> 2.00.00-0
+- Moved flag parsing around (jean-francois@famillegratton.net)
+- Rewrite to send data as JSON (jean-francois@famillegratton.net)
+
 * Fri Sep 20 2024 RPM Builder <builder@famillegratton.net> 1.00.00-0
 - new package built with tito
 
