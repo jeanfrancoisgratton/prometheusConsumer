@@ -34,15 +34,6 @@ func main() {
 	versionFlag := flag.Bool("version", false, "Displays the version info and exits")
 	flag.Parse()
 
-	// both add and rm flags cannot simultaneously be present or absent
-	if *addFlag == *rmFlag {
-		fmt.Println("Both -add and -rm cannot simultaneously be set or unset")
-		os.Exit(1)
-	} else {
-		if *rmFlag {
-			command = "rm"
-		}
-	}
 	// -version flag
 	if *versionFlag {
 		fmt.Printf("%s %s\n", filepath.Base(os.Args[0]), hf.White(fmt.Sprintf("2.00.00-%s 2024.09.23", runtime.GOARCH)))
@@ -58,14 +49,16 @@ func main() {
 		}
 	}
 
-	//// Get the client hostname
-	//hostname, err := os.Hostname()
-	//// On MacOS, hostnames are suffixed with ".local". We need to trim that
-	//hostname = strings.TrimSuffix(hostname, ".local")
-	//if err != nil {
-	//	log.Fatalf("Unable to get hostname: %v\n", err)
-	//}
-
+	// both add and rm flags cannot simultaneously be present or absent
+	if *addFlag == *rmFlag {
+		fmt.Println("Both -add and -rm cannot simultaneously be set or unset")
+		os.Exit(1)
+	} else {
+		if *rmFlag {
+			command = "rm"
+		}
+	}
+	
 	// Load the configuration file
 	if cfg, ce = loadConfig(); ce != nil {
 		fmt.Println(ce.Error())
