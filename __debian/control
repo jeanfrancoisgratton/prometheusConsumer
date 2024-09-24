@@ -1,5 +1,5 @@
 Package: prometheusConsumer
-Version: 1.00.00-0
+Version: 2.00.00-0
 Architecture: amd64
 Maintainer: J.F.Gratton <jean-francois@famillegratton.net>
 Description: Prometheus File-based Service Discovery listener and consumer

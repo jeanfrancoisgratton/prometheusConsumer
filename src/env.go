@@ -9,13 +9,6 @@ import (
 	"strings"
 )
 
-type Config_s struct {
-	CAcert string `json:"cacert"`
-	//	Cert        string `json:"cert"`
-	//	Key         string `json:"key"`
-	ListenerURL string `json:"listenerurl"`
-}
-
 func loadConfig() (Config_s, *cerr.CustomError) {
 	var payload Config_s
 

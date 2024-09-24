@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PKGDIR="prometheusConsumer-1.00.00-0_amd64"
+PKGDIR="prometheusConsumer-1.10.00-0_amd64"
 
 mkdir -p ${PKGDIR}/opt/bin ${PKGDIR}/DEBIAN
 mkdir -p ${PKGDIR}/opt/bin ${PKGDIR}/DEBIAN
