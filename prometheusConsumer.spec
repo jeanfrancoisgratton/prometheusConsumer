@@ -64,6 +64,11 @@ install -Dpm 0755 %{_sourcedir}/%{_binaryname} %{buildroot}%{_bindir}/%{_binaryn
 
 
 %changelog
+* Fri Sep 27 2024 RPM Builder <builder@famillegratton.net> 2.01.00-0
+- Added -printconfig flag, added -ls command (jean-francois@famillegratton.net)
+- Moved https post in its own file (jean-francois@famillegratton.net)
+- Forgot to bump version here (builder@famillegratton.net)
+
 * Tue Sep 24 2024 RPM Builder <builder@famillegratton.net> 2.00.00-0
 - Moved flag parsing around (jean-francois@famillegratton.net)
 - Rewrite to send data as JSON (jean-francois@famillegratton.net)
