@@ -16,7 +16,7 @@ func loadConfig() (Config_s, *cerr.CustomError) {
 	_, err := os.Stat(rcFile)
 	// We need to create the environment file if it does not exist
 	if os.IsNotExist(err) {
-		panic("Configuration file not found")
+		return Config_s{}, &cerr.CustomError{Title: "Unable to load config file", Message: "Config file not found"}
 	}
 
 	jFile, err := os.ReadFile(rcFile)

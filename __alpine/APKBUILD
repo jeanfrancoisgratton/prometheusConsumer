@@ -1,7 +1,7 @@
 # Maintainer: J.F.Gratton <jean-francois@famillegratton.net>
 # Packager: Package builder <builder@famillegratton.net>
 pkgname=prometheusConsumer
-pkgver=2.00.00
+pkgver=2.01.00
 pkgrel=0
 pkgdir=/data/packages
 builddir="$startdir/src/BUILD"
